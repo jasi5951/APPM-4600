@@ -1,3 +1,4 @@
+# Importing the libraries
 import numpy as np
 import numpy.linalg as la
 import math
@@ -5,6 +6,7 @@ import math
 def driver():
 
      n = 100
+     # creates a list from 0 to pi with 100 time steps
      x = np.linspace(0,np.pi,n)
 
 # this is a function handle.  You can use it to define 
@@ -23,9 +25,10 @@ def driver():
      print('the dot product is : ', dp)
 
      return
-     
-def dotProduct(x,y,n):
 
+# computes the dot product
+def dotProduct(x,y,n):
+# Loops over both lists and multiplies both elements and then adds them
      dp = 0.
      for j in range(n):
         dp = dp + x[j]*y[j]
